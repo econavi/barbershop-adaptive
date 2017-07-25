@@ -1,0 +1,16 @@
+.advantages
+	.advantages__wrapper.slider
+		input.slider__item(type='radio', name='advantages', id='advantages-input-1', checked)
+		input.slider__item(type='radio', name='advantages', id='advantages-input-2')
+		input.slider__item(type='radio', name='advantages', id='advantages-input-3')
+
+		ul.advantages__list
+			li.advantages__item.advantages__item_fast.slider__item
+				h3.advantages__item-title Быстро
+				p.advantages__item-text 
+					| Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки
+
+		.advantages__toggles.slider__toggles
+			label.slider__toggle(for='advantages-input-1') 1
+			label.slider__toggle(for='advantages-input-2') 2
+			label.slider__toggle(for='advantages-input-3') 3

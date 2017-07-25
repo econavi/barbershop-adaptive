@@ -1,24 +1,24 @@
 -
 	var list = [
 
-		{	name: 'Главная'
-			url: '/',
+		{	name: 'Главная',
+			url: '/'
 		},
 		
-		{	name: 'Раздел первого уровня'
-			url: path + 'lev1/',
+		{	name: 'Наши работы',
+			url: path + 'lev1/'
 		},
 		
-		{	name: 'Раздел второго уровня'
-			url: path + 'lev1/lev2/',
+		{	name: 'Раздел второго уровня',
+			url: path + 'lev1/lev2/'
 		},
 		
-		{	name: 'Ссылка'
-			url: 'javascript:void(0);',
+		{	name: 'Ссылка',
+			url: 'javascript:void(0);'
 		},
 		
-		{	name: 'Ссылка'
-			url: 'javascript:void(0);',
+		{	name: 'Ссылка',
+			url: 'javascript:void(0);'
 		}
 
 	];
@@ -30,6 +30,7 @@ mixin navItem(url, name)
 
 
 nav.main-menu
+	button.main-menu__toggle(type='button') Открыть меню
 	ul.main-menu__list
 		each i in list
 			+navItem(i.url, i.name)

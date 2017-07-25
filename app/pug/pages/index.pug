@@ -2,14 +2,23 @@ extends ../templates/default/template.pug
 
 block head
 	- var path = '';
-	- var pageTitle = 'Главная страница';
-	- var pageDescription = 'Описание главной страницы';
+	- var pageTitle = 'Парикмахерска Barbershop';
+	- var pageDescription = 'Адаптивная верстка учебного макета HTML-Academy';
 
 block content
-	main
+	main.page-main
+		h1.visualli-hidden Барбершоп "Бородинский" - истинно мужская классика
+		
+		section.page-main__stats
+			include ../../blocks/stats/stats.pug
 
-		h1 Главная страница
+		section.page-main__advantages
+			include ../../blocks/advantages/advantages.pug
 
-		p Lorem ipsum&nbsp;&mdash; классическая панграмма, условный, зачастую бессмысленный текст-заполнитель, вставляемый в&nbsp;макет страницы. Используется в&nbsp;качестве заполнителя по&nbsp;крайней мере с&nbsp;XVI&nbsp;века. Является искажённым отрывком из&nbsp;философского трактата Марка Туллия Цицерона &laquo;О&nbsp;пределах добра и&nbsp;зла&raquo;, написанного в&nbsp;45&nbsp;году до&nbsp;н.&nbsp;э.&nbsp;на&nbsp;латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+		section.page-main__news
+			include ../../blocks/news/news.pug
 
-		include ../../blocks/textarea/textarea.pug
+		section.page-main__reviews
+			include ../../blocks/reviews/reviews.pug
+			
+

@@ -286,7 +286,9 @@
 		};
 	}
 
+	// textarea(document.querySelector('.textarea'));
+	// textarea($('textarea'));
+
 	module.exports = autosize;
 });
 
-textarea(document.querySelector('.textarea'));

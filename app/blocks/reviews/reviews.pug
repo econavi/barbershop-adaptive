@@ -1,0 +1,30 @@
+.reviews
+	.reviews__wrapper.slider
+		h2.reviews__title Отзывы о нас
+
+		a.reviews__btn-write.button(href='javascript:void(0)') Оставить свой
+
+		input.slider__item(type='radio', name='reviews', id='reviews-input-1', checked)
+		input.slider__item(type='radio', name='reviews', id='reviews-input-2')
+		input.slider__item(type='radio', name='reviews', id='reviews-input-3') 
+		
+		.reviews__items
+			blockquote.reviews__item.slider__item
+				.reviews__auhor-foto
+					img(
+						src= path + 'assets/img/content/pic-travis.jpg',
+						width='50',
+						height='33',
+						alt='Фото Трэвиса Баркера'
+					)
+				b.reviews__auhor-name Трэвис Баркер
+				cite.reviews__auhor-text Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+			
+			button.reviews__btn-prev(type='button') Предыдущий отзыв
+			button.reviews__btn-next(type='button') Следующий отзыв
+
+
+		.reviews__toggles.slider__toggles
+			label.slider__toggle(for='reviews-input-1') 1
+			label.slider__toggle(for='reviews-input-2') 2
+			label.slider__toggle(for='reviews-input-3') 3
