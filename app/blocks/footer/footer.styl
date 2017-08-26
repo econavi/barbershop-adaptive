@@ -1,0 +1,153 @@
+.footer
+	container-fluid()
+	position relative
+	
+	padding-top 70px
+	padding-bottom 24px
+	
+	background #292929
+
+	&::before
+		content ''
+		position absolute
+		top 0
+		left 0
+		
+		width 50%
+		height 35px
+		
+		background linear-gradient(to left bottom, #fff 49%, #292929 50%)
+	
+	&::after
+		content ''
+		position absolute
+		top 0
+		right 0
+		
+		width 50%
+		height 35px
+		
+		background linear-gradient(to right bottom, #fff 49%, #292929 50%)
+	
+	+above($tablet)
+		padding-top 50px
+		padding-bottom 60px
+		
+		&::before,
+		&::after
+			display none
+	
+	&__inner
+		+above($tablet)
+			display flex
+			flex-wrap wrap
+			justify-content space-between
+		
+		+above($desktop)
+			flex-wrap nowrap
+			align-items start
+		
+	&__contacts
+		display flex
+		flex-direction column
+		justify-content space-between
+		align-items center
+		
+		margin-bottom 25px
+		
+		+above($tablet)
+			align-items start
+			margin-bottom 0
+			justify-content start
+	
+	&__contacts-title
+		margin-bottom 20px
+		
+		font-weight bold
+		
+		+above($tablet)
+			margin-bottom 15px
+			
+			text-transform uppercase
+
+	&__contacts-address
+		padding 0 40px
+		margin-bottom 20px
+		
+		text-align center
+		
+		+above($tablet)
+			padding 0
+			margin-bottom 0
+
+	&__contacts-tel
+		padding 14px 75px
+		
+		font-size 1.8rem
+		line-height 2.7rem
+		text-decoration none
+
+		color #fff
+		border 1px solid #303030
+		
+		+above($tablet)
+			padding 0
+			border none
+	
+	&__contacts-elem-hidden
+		display none
+
+	&__social
+		margin-bottom 30px
+		
+		+above($tablet)
+			order 3
+
+			width 100%
+			margin 0
+			margin-top 50px
+		
+		+above($desktop)
+			order 0
+			width auto
+			margin 0
+			
+			text-align center
+	
+	&__social-title
+		display none
+		
+		+above($desktop)
+			display block
+			margin-bottom 15px
+
+	&__copyright
+		text-align center
+		
+		+above($tablet)
+			margin-bottom 0
+		
+	&__copyright-title
+		display block
+		
+		margin-bottom 20px
+	
+	&__copyright-link
+		padding 14px 75px
+
+		color #fff
+		border-color #303030
+
+		
+
+
+
+
+
+
+
+
+
+
+
+

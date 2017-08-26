@@ -1,33 +1,250 @@
 .main-menu
-	&__list
-		font-size 0
-		list-style-type none
-	&__item
-		display inline-block
-		vertical-align top
-		font-size 1.6rem
-		line-height 2rem
+	position relative
 	
-	&__link
-		display block
-		padding 25px 20px
-		text-decoration none
-		
-		&:hover
-			background #242424
-			transition background 0.2s
-		
-		&_active
-			position relative
+	&__toggle
+		+below($mobile-widths-only)
+			position absolute
+			top 0
+			right 0
+			z-index 2
+			
+			display block
+			width 70px
+			height 50px
+			
+			font-size 0
+
+			background #6a4d38			
+			border none
+			outline-width 0
+			
+			cursor pointer
 			
 			&:hover
-				background none
+				background #624530
 			
+			&:active
+				background #6a4d38
+		
+		+above($tablet)
+			display none
+	
+	&_closed &__toggle
+		+below($mobile-widths-only)
+			right 0
+
+			&::before
+				content ''
+				position absolute
+				top 15px
+				left 17px
+
+				width 36px
+				height 2px
+
+				background #fff
+				box-shadow 0 8px 0 0 #fff, 0 16px 0 0 #fff
+
+	&_opened &__toggle
+		+below($mobile-widths-only)
+			right auto
+			left 0
+			
+			&::before, 
 			&::after
 				content ''
 				position absolute
-				right 20px
-				bottom 0
-				left 20px
-				height 5px
-				background-color red
+				
+				top 24px
+				left 18px
+				
+				width 36px
+				height 2px
+				
+				background #fff
+			
+			&::before
+				transform rotate(45deg)
+
+			&::after
+				transform rotate(-45deg)
+	
+	&_nojs &__toggle
+		+below($mobile-widths-only)
+			display none
+	
+
+	&__inner
+		+above($tablet)
+			display flex
+			justify-content space-between
+
+	&_opened &__inner
+		+below($mobile-widths-only)
+			position absolute
+			top 0
+			right 0
+			left 70px
+			z-index 10
+			
+			height 80vh
+			
+			background #6a4d38
+			
+			&::before
+				content ''
+				position absolute
+				top 0
+				left 0
+				z-index 2
+				
+				width 7px
+				height 100%
+				
+				box-shadow inset 4px 0 7px -2px rgba(0, 0, 0, 0.4)
+	
+	&_nojs &__inner
+		+below($mobile-widths-only)
+			position static
+			
+			height auto
+
+	&__list
+		margin 0
+		padding 0
+
+		font-weight bold
+
+		list-style-type none
+		
+		+above($tablet)			
+			display flex
+			flex-wrap wrap
+			flex-grow 1
+			
+	&__item
+		+above($tablet)
+			margin-right 32px
+			
+			&:last-child
+				margin-right 0
+		
+		+above($desktop)
+			margin-right 0
+			
+		&_active
+			+above($tablet)
+				position relative
+				
+				&::after
+					content ''
+					position absolute
+					right 0
+					bottom 0
+					left 0
+					
+					height 3px
+					
+					background #826550
+					
+				+above($desktop)
+					&::after
+						right 30px
+						left 30px
+	
+	&_closed &__item
+		+below($mobile-widths-only)
+			display none
+			
+			&_active
+				display block
+	
+	&_opened &__item
+		+below($mobile-widths-only)
+			display block
+	
+	&_nojs &__item
+		+below($mobile-widths-only)
+			display block
+	
+	&__link
+		display block
+		padding 12px 21px
+		padding-bottom 13px
+		
+		font-size 1.8rem
+		line-height 2.4rem
+		color #fff
+		text-transform uppercase
+		text-decoration none
+		
+		background #826550
+		border-top 1px solid #886e5d
+		border-bottom 1px solid #71543f
+
+		&:hover
+			background #755a46
+			border-top-color #755a46
+		
+		&:active
+			background #6a4d38
+			border-top-color #6a4d38
+		
+		+above($tablet)
+			padding 0
+			padding-top 25px
+			padding-bottom 23px
+			
+			background none
+			border none
+			
+			&:hover
+				color #826550
+				background #000
+			
+			&:active
+				color #fff
+				background #000
+				opacity 0.3
+		
+		+above($desktop)
+			padding-right 31px
+			padding-left 31px
+	
+	&_closed &__link
+		+below($mobile-widths-only)
+			padding-right 70px
+			padding-left 70px
+			
+			text-align center
+
+	&_nojs &__link
+		+below($mobile-widths-only)
+			padding-right 21px
+			padding-left 21px
+			
+			text-align left
+
+	&__user
+		+above($tablet)
+			width 60px
+			padding 0
+			
+			font-size 0
+		
+		+above($desktop)
+			width auto
+			max-width 160px
+			
+			font-size 1.8rem
+	
+	&_closed &__user
+		+below($mobile-widths-only)
+			display none
+	
+	&_nojs &__user
+		+below($mobile-widths-only)
+			display block
+
+
+

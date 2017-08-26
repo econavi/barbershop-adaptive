@@ -1,0 +1,29 @@
+/* =============================================
+			Стили пагинации для CSS-слайдеров
+=============================================== */
+
+.slider-pagination
+	position absolute
+	bottom 0px
+	left 50%
+	
+	display flex
+	
+	z-index 1000
+	
+	transform translateX(-50%)
+	
+	&__item		
+		width 8px
+		height 8px
+		margin-right 23px
+		
+		border 2px solid #787878
+
+		transform rotate(45deg)
+		
+		cursor pointer
+
+		&:last-child
+			margin-right 0
+			

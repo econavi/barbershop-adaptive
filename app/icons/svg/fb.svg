@@ -1,63 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 32 32"
-   version="1.1"
-   id="svg4"
-   sodipodi:docname="fb.svg"
-   width="32"
-   height="32"
-   inkscape:version="0.92.1 r">
-  <metadata
-     id="metadata10">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs8" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
-     id="namedview6"
-     showgrid="false"
-     inkscape:pagecheckerboard="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:snap-page="true"
-     inkscape:snap-object-midpoints="true"
-     inkscape:snap-center="true"
-     inkscape:snap-text-baseline="true"
-     inkscape:zoom="30.054123"
-     inkscape:cx="26.396254"
-     inkscape:cy="17.541228"
-     inkscape:current-layer="svg4" />
-  <path
-     d="M 32,32 H 0 V 0 H 32 Z M 16.790312,25.483748 v -9.47355 h 2.797196 l 0.290631,-3.151051 h -3.089866 v -1.89675 c 0,-0.907584 0.08668,-1.2848947 1.394009,-1.2848947 h 1.798853 V 6.1899306 h -2.847164 c -3.359082,0 -4.162651,1.570427 -4.162651,4.4257484 v 2.243468 h -1.926323 v 3.151051 h 1.933461 v 9.47355 h 3.811854"
-     id="path2"
-     inkscape:connector-curvature="0"
-     style="fill:#ffffff;fill-rule:evenodd;stroke-width:1"
-     sodipodi:nodetypes="ccccccccccssccsscccccc" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.94 19.29">
+    <defs>
+        <style>
+        .cls-1 {
+            fill: #fff;
+        }
+        </style>
+    </defs>
+    <title>Ресурс 1</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="Слой_1-2" data-name="Слой 1">
+            <path id="path2" class="cls-1" d="M5.75,19.29V9.82h2.8l.29-3.15H5.74V4.77c0-.91.09-1.28,1.39-1.28h1.8V0H6.09C2.73,0,1.93,1.57,1.93,4.43V6.67H0V9.82H1.93v9.47H5.75" />
+        </g>
+    </g>
 </svg>

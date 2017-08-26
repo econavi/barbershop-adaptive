@@ -1,0 +1,148 @@
+.news
+	container-fluid()
+	
+	padding-right 20px
+	padding-bottom 30px
+	padding-left 20px
+	
+	color black
+	
+	+above($tablet)
+		position relative
+		
+		padding 0
+		padding-bottom 40px
+
+
+	&__title
+		margin 0
+		margin-bottom 28px
+		
+		font-size 3rem
+		line-height 3rem
+		text-align center
+		text-transform uppercase
+		
+		+above($tablet)
+
+			margin-right 200px
+			margin-bottom 55px
+			
+			text-align left
+		
+		+above($desktop)
+			margin-left 70px
+
+
+	&__list
+		max-width 420px
+		margin 0 auto
+		padding 0
+		padding-bottom 7px
+		
+		list-style none
+		
+		+above($tablet)
+			display flex
+			justify-content center
+			
+			max-width none
+
+
+	&__item
+		position relative
+		
+		margin-bottom 16px
+		padding-bottom 16px
+		padding-left 70px
+		
+		font-size 1.8rem
+		line-height 2.7rem
+		
+		border-bottom 1px solid #f2ede8
+		
+		&:nth-child(2)
+				margin-bottom 0
+				
+				border-bottom none
+		
+		&:nth-child(n+3)
+			display none
+		
+		+above($tablet)
+			width 320px
+			margin 0
+			padding 0 30px
+			padding-left 70px
+			
+			border-bottom none
+		
+		+above($desktop)
+			&:nth-child(n+3)
+				display inline-block
+	
+
+	&__date
+		position absolute
+		top 8px
+		left 0
+		
+		width 50px
+		height 50px
+		padding-top 8px
+
+		font-size 1.6rem
+		line-height 1rem
+		text-align center
+		
+		color #fff
+		background #000
+		
+		&::before
+			content ''
+			position absolute
+			right 0
+			bottom -12px
+			left 0
+									
+			width 0
+			height 0
+
+			border-top 12px solid #000
+			border-right 25px solid transparent
+			border-left 25px solid transparent
+
+	&__date b
+		font-size 3rem
+		line-height 3rem
+
+	&__preview
+		margin 0
+	
+	&__btn-to-all
+		display block
+		
+		color #000
+		border-color #f2ede8
+		
+		&:hover
+			background #f2ede8
+		
+		+above($tablet)
+			position absolute
+			top -7px
+			right 0
+		
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+.reviews
+	container-fluid()
+	padding 0 20px
+	
+	color #000
+	
+	+above($tablet)
+		position relative
+		
+		padding 0
+		
+	&__title
+		margin 0
+		margin-bottom 27px
+		
+		font-size 3rem
+		line-height 3rem
+		text-align center
+		text-transform uppercase
+		
+		+above($tablet)
+			margin-right 240px
+			margin-bottom 45px
+
+			text-align left
+		
+		+above($desktop)
+			margin-left 70px
+	
+	&__btn-write
+		display none
+		
+		+above($tablet)
+			position absolute
+			top -7px
+			right 0
+			
+			display block
+			
+			color #000
+			border-color #f2ede8
+	
+	&__content-wrap
+		position relative
+		
+		display flex
+		justify-content center
+		
+		+above($desktop)
+			justify-content space-between
+
+	&__item
+		position relative
+		
+		margin 0
+		padding-right 10px
+		padding-left 70px
+		padding-bottom 30px
+		
+		+above($tablet)
+			padding-top 28px
+			padding-left 140px
+			padding-bottom 28px
+		
+		+above($desktop)
+			padding-left 320px
+			padding-right 70px
+				
+	
+	&__author-foto
+		position absolute
+		top 8px
+		left 0
+		
+		border 1px solid #bcbdba
+		
+		+above($tablet)
+			top 50%
+			left 30px
+			
+			width 80px
+			height 80px
+			
+			border-radius 50%
+			border none
+			
+			transform: translateY(-50%)
+			
+			overflow hidden
+		
+		+above($desktop)
+			top 0
+			left 0
+			
+			width 248px
+			height 160px
+			
+			border-radius 0
+			
+			transform none
+	
+	&__author-foto img
+		display block
+		width 50px
+		height 48px
+		
+		+above($tablet)
+			width auto
+			height 100%
+		
+		+above($desktop)
+			width 100%
+			height auto
+	
+	&__author-name
+		display block
+		margin-bottom 6px
+ 
+		font-size 2.4rem
+		line-height 2.7rem
+	
+	&__author-text
+		font-size 1.8rem
+		line-height 2.7rem
+		font-style normal
+	
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+

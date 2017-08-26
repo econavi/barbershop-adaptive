@@ -1,0 +1,25 @@
+form.login-form(action='javascript:void(0)', method='post')
+	h2.login-form__title.title личный кабинет
+	span.login-form__text пожалуйста введите свой логин и пароль
+	
+	.login-form__login
+		input.login-form__input-text.input(
+			type='text', 
+			name='login', 
+			placeholder='Логин'
+		)
+	
+	.login-form__password
+		input.login-form__input-text.input(
+			type='password', 
+			name='password', 
+			placeholder='Пароль'
+		)
+	
+	label.login-form__checkbox-wrap
+		input.login-form__checkbox(type='checkbox', name='remember')
+		span.login-form__fake-checkbox
+		span.login-form__name-checkbox запомните меня
+	
+	a.login-form__restore-link.link.link_black(href='javascript:void(0);') я забыл пароль!
+	button.login-form__btn.button(type='submit') Войти

@@ -1,0 +1,56 @@
+.page-main
+	
+	&__news
+		position relative
+		
+		padding-top 67px
+		
+		background #fff
+		border-bottom 1px solid #f2ede8
+	
+		+above($tablet)
+			padding-top 90px
+		
+		+above($desktop)
+			padding-top 110px
+	
+		&::before
+			content ''
+			position absolute
+			top 0
+			left 0
+			
+			width 50%
+			height 35px
+			
+			background linear-gradient(to left bottom, #292929 49%, #fff 50%)
+		
+		&::after
+			content ''
+			position absolute
+			top 0
+			right 0
+			
+			width 50%
+			height 35px
+			
+			background linear-gradient(to right bottom, #292929 49%, #fff 50%)
+	
+	&__reviews
+		position relative
+		
+		padding-top 27px
+		padding-bottom 25px
+		
+		background #fff
+		
+		+above($tablet)
+			padding-top 45px
+			padding-bottom 70px
+			
+		+above($desktop)
+			padding-top 50px
+			padding-bottom 100px
+		
+
+		

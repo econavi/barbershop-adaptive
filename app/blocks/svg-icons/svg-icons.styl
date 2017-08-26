@@ -1,15 +1,35 @@
 .svg-icon
 	display inline-block
-	fill currentColor
+	// fill currentColor
+	fill #fff
+	margin auto
 
 .icon-fb
 	@extends $icon-fb
+	width 19px
+	height 39px
+	
+	+above($desktop)
+		width 10px
+		height 21px
 	
 .icon-tw
 	@extends $icon-tw
 	
 .icon-vk
 	@extends $icon-vk
+	width 23px
+	height 26px
+	
+	+above($desktop)
+		width 14px
+		height 17px
 	
 .icon-ig
 	@extends $icon-ig
+	width 36px
+	height 36px
+	
+	+above($desktop)
+		width 19px
+		height 19px

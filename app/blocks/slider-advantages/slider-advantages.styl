@@ -1,0 +1,40 @@
+/* =============================================
+			CSS-слайдер для секции Advantages.
+=============================================== */
+
+.slider-advantages
+	position relative
+	
+	+below($mobile-widths-only)
+		min-height 355px
+
+	&__item
+		+below($mobile-widths-only)
+			position absolute
+			top 0
+			left 0
+				
+			opacity 0
+	
+	&__pagination
+		+above($tablet)
+			display none
+			
+.slider-advantages input
+	display none
+
+
+/* =============================================
+			Controls Rules для CSS-слайдер
+=============================================== */
+#advantages-toggle-slide-1:checked ~ .slider-advantages__items .slider-advantages__item:nth-child(1),
+#advantages-toggle-slide-2:checked ~ .slider-advantages__items .slider-advantages__item:nth-child(2),
+#advantages-toggle-slide-3:checked ~ .slider-advantages__items .slider-advantages__item:nth-child(3)
+	opacity 1
+	transition 2s
+
+#advantages-toggle-slide-1:checked ~ .slider-advantages__pagination .slider-pagination__item:nth-child(1),
+#advantages-toggle-slide-2:checked ~ .slider-advantages__pagination .slider-pagination__item:nth-child(2),
+#advantages-toggle-slide-3:checked ~ .slider-advantages__pagination .slider-pagination__item:nth-child(3)
+	background #fff
+	border 2px solid #fff

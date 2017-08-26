@@ -1,21 +1,18 @@
 footer.footer
-	p.footer__contacts
-		b Барбершоп Бородинский<br>
+	.footer__inner
+		.footer__contacts
+			span.footer__contacts-title Барбершоп Бородинский
 
-		| г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+			span.footer__contacts-address г. Санкт-Петербург, ул. Большая Конюшенная 19/8
 
-		a(href='tel:+79876543221')
-			span.footer__contacts-elem-hidden Тел.:
-			| +7 (987) 654-32-21
+			a.footer__contacts-tel(href='tel:+79876543221')
+				span.footer__contacts-elem-hidden Тел.:
+				span +7 (987) 654-32-21
 
-	p.footer__social
-		
-		span.social-links
-			
-			a.social-link.social-link_vk(href='javascript:void(0)') Мы в Вконтакте
-			a.social-link.social-link_fb(href='javascript:void(0)') Мы в Фейсбуке
-			a.social-link.social-link_ig(href='javascript:void(0)') Мы в Инстаграме
+		.footer__social
+			span.footer__social-title Давайте дружить!
+			include ../social-links/social-links.pug
 
-	p.footer__copyright 
-		| Разработано:
-		a.footer__copyright-link.button(href='javascript:void(0)') HTML Academy
+		.footer__copyright 
+			span.footer__copyright-title Разработано:
+			a.footer__copyright-link.button(href='javascript:void(0)') HTML Academy

@@ -1,0 +1,148 @@
+@keyframes login-form-shake {
+	0%, 100% {
+		transform translateX(0)
+	}
+	
+	10%, 70% {
+		transform translateX(-10px)
+	}
+	
+	30% {
+		transform translateX(10px)
+	}
+	
+}
+
+.login-form
+	display none
+	position relative
+	
+	width 80vw
+	margin 30px 20px
+	
+	font-size 1.4rem
+	line-height 2.4rem
+	font-weight bold
+	text-transform uppercase
+	
+	+above($tablet)
+		width 300px
+		margin 60px 80px
+	
+	&_validation_error
+		animation-name login-form-shake
+		animation-duration 0.2s		
+	
+	&__title
+		margin-bottom 20px
+	
+	&__text
+		display block
+		margin-bottom 10px
+		
+	&__input-text
+		padding-right 40px
+		
+	&__login
+		position relative
+		margin-bottom 10px
+		
+		&::after
+			content ''
+			position absolute
+			top 50%
+			right 10px
+			width 16px
+			
+			height 16px
+			margin-top -8px
+			
+			sprite $login
+
+	&__password
+		position relative
+
+		margin-bottom 20px
+		
+		+above($tablet)
+			margin-bottom 10px
+		
+		&::after
+			content ''
+			position absolute
+			top 50%
+			right 10px
+			
+			width 16px
+			height 16px
+			margin-top -8px
+			
+			sprite $pass
+		
+	&__checkbox-wrap
+		position relative
+		
+		padding-left 28px
+		
+		cursor pointer
+		
+		&:hover
+			color #663d15
+			
+	&__checkbox
+		display none
+				
+	&__fake-checkbox		
+		position absolute
+		top -3px
+		left 0
+		
+		width 20px
+		height 20px
+		
+		border 2px solid #000
+		
+	&__checkbox:checked + &__fake-checkbox::after, 
+	&__checkbox:checked + &__fake-checkbox::before
+		content ''
+		position absolute
+		top 7px
+		left 1px
+		
+		width 14px
+		height 2px
+		
+		background #000
+	
+	&__checkbox:checked + &__fake-checkbox::after
+		transform rotate(45deg)
+	
+	&__checkbox:checked + &__fake-checkbox::before
+		transform rotate(-45deg)
+			
+	&__restore-link
+		display block
+		
+		color #000
+		
+		margin-top 10px
+		
+		+above($tablet)
+			float right
+			
+			margin-top 0
+	
+	&__btn
+		width 100%
+		margin-top 20px
+		
+		color #fff
+		background #000
+
+
+
+
+
+
+
+	

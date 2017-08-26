@@ -1,0 +1,156 @@
+/* ================================
+	Кастомные стили для JS-слайдера Swiper.
+  Классы переназначать нельзя. 
+  
+ * Swiper 3.4.2
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * 
+ * http://www.idangero.us/swiper/
+ * 
+ * Copyright 2017, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Licensed under MIT
+ * 
+ * Released on: March 10, 2017
+   ================================ */
+
+.swiper-container
+  position relative
+  /* Fix of Webkit flickering */
+  z-index 1
+
+  max-width 420px
+  min-height 170px
+  
+  overflow hidden
+  
+  +above($tablet)
+    order 1
+    
+    width 85%
+    max-width 820px
+    min-height 0
+
+    border 1px solid #f2ede8
+
+.swiper-wrapper
+  position relative
+  z-index 1
+
+  display flex
+
+  width 100%
+  height 100%
+
+  transition-property transform
+  box-sizing content-box
+
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-slide
+  position relative
+  
+  flex-shrink 0
+  
+  width 100%
+  height 100%
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+/* Пагинация */
+.swiper-pagination
+  position absolute
+  z-index 10
+  
+  transition 300ms
+
+.swiper-pagination-bullets
+  bottom -10px
+  left 50%
+  
+  background #fff
+  
+  transform translateX(-50%)
+  
+  +above($tablet)
+    padding 0 25px
+  
+  +above($desktop)
+    bottom -50px
+
+.swiper-pagination-bullet
+  display inline-block
+
+  width 8px
+  height 8px
+  margin 0 11px
+
+  border 2px solid #adaba9
+  cursor pointer
+  
+  transform rotate(45deg)
+
+.swiper-pagination-bullet-active
+  border none
+  background #353535
+
+/* Кнопки */
+.swiper-button-prev,
+.swiper-button-next
+  display none
+
+  +above($tablet)
+    position relative
+    
+    display block
+    width 50px
+    height 160px
+
+    border 1px solid #f2ede8
+    background none
+    outline-width 0
+    cursor pointer
+    
+    &::before
+      content ''
+      position absolute
+      top 50%
+      z-index 1
+      
+      width 0
+      height 0
+      
+      border 8px solid transparent
+      
+      transform translateY(-50%)
+
+.swiper-button-next
+  +above($tablet)
+    order 2
+    
+    &::before
+      right 20%
+      
+      border-left 12px solid #000
+
+.swiper-button-prev
+  +above($tablet)
+    &::before
+      content ''
+      left 20%
+      
+      border-right 12px solid #000
+  

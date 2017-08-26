@@ -1,16 +1,27 @@
 .advantages
-	.advantages__wrapper.slider
-		input.slider__item(type='radio', name='advantages', id='advantages-input-1', checked)
-		input.slider__item(type='radio', name='advantages', id='advantages-input-2')
-		input.slider__item(type='radio', name='advantages', id='advantages-input-3')
+	.advantages__wrapper.slider-advantages
 
-		ul.advantages__list
-			li.advantages__item.advantages__item_fast.slider__item
-				h3.advantages__item-title Быстро
+		input(type='radio', name='slider-toggle', id='advantages-toggle-slide-1', checked='checked')
+		input(type='radio', name='slider-toggle', id='advantages-toggle-slide-2')
+		input(type='radio', name='slider-toggle', id='advantages-toggle-slide-3')
+
+		ul.advantages__list.slider-advantages__items
+			li.advantages__item.advantages__item_fast.slider-advantages__item
+				h3.advantages__item-title БЫСТРО
 				p.advantages__item-text 
-					| Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки
+					| Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;Вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки
 
-		.advantages__toggles.slider__toggles
-			label.slider__toggle(for='advantages-input-1') 1
-			label.slider__toggle(for='advantages-input-2') 2
-			label.slider__toggle(for='advantages-input-3') 3
+			li.advantages__item.advantages__item_cool.slider-advantages__item
+				h3.advantages__item-title КРУТО
+				p.advantages__item-text 
+					| Забудьте, как вы&nbsp;стриглись раньше. Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино. Во&nbsp;всяком случае внешне.
+
+			li.advantages__item.advantages__item_expensive.slider-advantages__item
+				h3.advantages__item-title ДОРОГО
+				p.advantages__item-text 
+					| Наши мастера&nbsp;&mdash; профессионалы своего делаи не&nbsp;могут стоить дёшево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;даёт определённый статус?
+
+		.slider-advantages__pagination.slider-pagination
+			label.slider-pagination__item(for='advantages-toggle-slide-1')
+			label.slider-pagination__item(for='advantages-toggle-slide-2')
+			label.slider-pagination__item(for='advantages-toggle-slide-3')

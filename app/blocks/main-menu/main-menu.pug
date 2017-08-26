@@ -2,35 +2,59 @@
 	var list = [
 
 		{	name: 'Главная',
-			url: '/'
+			url: '/',
+			moreClass: 'main-menu__item_active'
 		},
 		
 		{	name: 'Наши работы',
-			url: path + 'lev1/'
-		},
-		
-		{	name: 'Раздел второго уровня',
-			url: path + 'lev1/lev2/'
-		},
-		
-		{	name: 'Ссылка',
 			url: 'javascript:void(0);'
 		},
 		
-		{	name: 'Ссылка',
+		{	name: 'Записаться',
+			url: 'javascript:void(0);'
+		},
+		
+		{	name: 'Информация',
+			url: 'javascript:void(0);'
+		},
+		
+		{	name: 'Контакты',
 			url: 'javascript:void(0);'
 		}
 
 	];
 
 
-mixin navItem(url, name)
-	li.main-menu__item
+mixin navItem(url, name, moreClass)
+	li.main-menu__item(class=moreClass)
 		a.main-menu__link(href=url)= name
 
 
-nav.main-menu
+nav.main-menu.main-menu_closed.main-menu_nojs
 	button.main-menu__toggle(type='button') Открыть меню
-	ul.main-menu__list
-		each i in list
-			+navItem(i.url, i.name)
+	.main-menu__inner
+		
+		ul.main-menu__list
+			each i in list
+				+navItem(i.url, i.name, i.moreClass)
+
+		
+		.main-menu__user
+			include ../user-block/user-block.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

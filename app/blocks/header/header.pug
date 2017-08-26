@@ -1,11 +1,10 @@
 header.header
-	.header__logo
-		img(
-			src= path + 'assets/img/content/logo.svg',
-			width='370',
-			height='153',
-			alt='Барбершоп "Бородинский"'
-		)
-	.header__nav
+	h1.visualli-hidden Барбершоп адаптивный
 
-	.header__user-block
+	.header__logo
+		include ../logo/logo.pug
+	
+	.header__nav-section
+		.header__nav-wrapper
+			.header__main-menu
+				include ../main-menu/main-menu.pug

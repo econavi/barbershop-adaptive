@@ -1,0 +1,49 @@
+.user-block
+	margin 0
+	padding 0
+
+	list-style none
+	
+	&__link
+		position relative
+		
+		display block
+		padding 17px 21px
+		
+		line-height 2.4rem
+		color #fff
+		text-decoration none
+		
+		&:hover
+			color #826550
+		
+		+above($desktop)
+			padding 25px 30px 23px 50px
+		
+		&_sign-in
+			padding-left 49px
+			
+			&::before
+				content ''
+				position absolute
+				top 19px
+				left 21px
+				
+				width 16px
+				height 16px
+				
+				sprite $sign-in
+				opacity 0.7
+				
+			&:hover::before
+				opacity 1
+
+			+above($tablet)
+				&::before
+					top 29px
+					left 12px
+					
+					
+					
+
+		

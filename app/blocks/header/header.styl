@@ -1,0 +1,46 @@
+.header
+	background #242424
+	
+	+above($tablet)
+		display flex
+		flex-direction column
+		
+		background #000
+	
+	&__logo
+		text-align center
+		
+		+above($tablet)
+			order 2
+			position relative
+			
+			width 100%
+			height 400px
+
+			background #000
+			background url('../assets/img/general/bg-header.jpg') no-repeat center -9px
+
+			+above($desktop)
+				height 648px
+				
+				background-position center 0
+				background-size cover
+	
+	&__nav-section
+		min-height 51px
+		
+		background #826550
+		
+		+above($tablet)
+			container-fluid()
+			
+			background #000
+			
+
+
+
+			
+			
+	
+
+	

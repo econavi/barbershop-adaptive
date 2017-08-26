@@ -1,0 +1,219 @@
+.stats
+	container-fluid()
+	
+	+above($tablet)
+		position relative
+		z-index 1
+		
+		margin-top -184px
+		
+	+above($desktop)
+		display flex
+		margin-top -159px
+		
+	
+	&__stats-header
+		padding 27px 38px
+		
+		color #000
+		background #fff
+		
+		+above($tablet)
+			position relative
+			
+			display flex
+			flex-wrap wrap
+			min-height 184px
+			padding 31px 0 24px
+			
+			&::before
+				content ''
+				position absolute
+				top 27px
+				left -15px
+				
+				border 15px solid transparent
+				border-bottom-color #fff
+				
+				transform rotate(45deg)
+		
+		+above($desktop)
+			flex-direction column
+
+			width 320px
+			min-height 318px
+			padding-left 40px
+			padding-right 40px
+			
+			&::before
+				top 22px
+
+	&__title
+		margin 0
+		margin-bottom 16px
+		
+		font-weight bold
+		font-size 3rem
+		line-height 3rem
+		text-align center
+		text-transform uppercase
+		
+		+above($tablet)
+			width 50%
+			margin-bottom 20px
+			padding-left 40px
+			
+			font-size 4rem
+			line-height 4rem
+			text-align left
+			text-transform none
+		
+		+above($desktop)
+			width auto
+			padding-left 0
+			margin-bottom 42px
+
+	&__intro
+		margin 0
+		
+		font-size 2rem
+		line-height 2.7rem
+		text-align center
+		
+		+above($tablet)
+			width 37.5%
+			padding 0
+			padding-top 4px
+			padding-right 80px
+			
+			text-align left
+		
+		+above($desktop)
+			width auto
+			margin-bottom 32px
+			padding 0
+
+	&__legend
+		display block
+		
+		font-size 2rem
+		line-height 2rem
+		
+		&_top
+			display none
+			
+			+above($tablet)
+				display block				
+				width 50%
+				padding-left 40px
+				
+				color rgba(0, 0, 0, 0.3)
+			
+			+above($desktop)
+				width auto
+				padding-left 0
+				margin-top auto
+
+		&_bottom
+			padding-top 20px
+			padding-bottom 14px
+			
+			text-align center
+			
+			color rgba(255, 255, 255, 0.3)
+			background $bg-dark
+			
+			+above($tablet)
+				display none
+
+	&__legend sup
+		top -0.25em
+		
+		font-size 90%
+
+	&__list	
+		width 100%
+		border-collapse collapse
+		
+		+above($tablet)
+			display block
+
+		+above($desktop)
+			display flex
+			width 640px
+	
+	&__list	tbody
+		+above($tablet)
+			display flex
+			flex-wrap wrap
+
+	&__item
+		color #fff
+		
+		&:nth-child(2n+1)
+			background #353535
+		
+		&:nth-child(2n)
+			background #4e4e4e
+		
+		+above($tablet)
+			display block
+			width 50%
+			padding 25px 35px
+			padding-bottom 28px
+			
+			&:nth-child(1)
+			&:nth-child(4)
+				background #4e4e4e
+		
+			&:nth-child(2)
+			&:nth-child(3)
+				background #353535
+	
+	&__value
+		width 51%
+		padding 20px
+		padding-right 0
+		vertical-align top
+		
+		font-size 4rem
+		line-height 4rem
+		
+		+above($tablet)
+			display block
+			width auto
+			padding 0
+			margin-bottom 7px
+			
+			font-size 7.2rem
+			line-height 7.2rem
+
+	&__value sup
+		top -0.35em
+	
+	&__field
+		width 50%
+		padding 20px
+		padding-left 0
+		vertical-align top
+		
+		font-size 1.8rem
+		line-height 1.8rem
+		text-align right
+		
+		+above($tablet)
+			display block
+			width auto
+			padding 0
+			
+			font-size 2rem
+			line-height 2.7rem
+			text-align left
+	
+	&__field br
+		+above($tablet)
+			display none		
+	
+
+
+		
